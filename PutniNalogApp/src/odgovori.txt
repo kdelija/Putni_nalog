@@ -1,0 +1,19 @@
+U projektu Putni nalog app iz naprednog programiranja koristio sam Model view
+ controller razvojni obrazac, Observer razvojni obrazac za sakupljanje i
+ prenošenje informacija između view komponenti i controller-a i MySql bazu podataka.
+
+
+Što je napravljeno:
+
+Kreiran je folder ExtLib koji sadrži dvije vanjske biblioteke ( jdatepicker-1.3.4.jar, mysql-connector-java-8.0.15.jar ) 
+koje se koriste u projektu. U datoteci .classpath izmijenjena je putanja koja opisuje Eclipsu da se vanjske biblioteke 
+sada nalaze u folderu ExtLib.
+
+
+Zašto je napravljeno:
+
+Moj prvotni način importanja vanjskih biblioteka u eclipse nije bio najbolji zato što je lokacija vanjskih biblioteka 
+bila na lokalnom računalu izvan foldera projekta (workspace-a) i korištena je njihova apsolutna putanja. Na taj način 
+te vanjske biblioteke nisu dostupne bilo kome tko klonira projekt sa GitHub-a. Zato je puno bolje vanjske biblioteke 
+smjestiti u folder u workspace-u i postaviti im pripadnu relativnu lokaciju u datoteci .classpath. Sada bilo tko može klonirat 
+projekt sa GitHuba-a i importat ga u Eclipse bez pojavljivanja greški.
